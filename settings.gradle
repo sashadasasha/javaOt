@@ -1,0 +1,3 @@
+rootProject.name = 'javaOt'
+include 'hw-01'
+
