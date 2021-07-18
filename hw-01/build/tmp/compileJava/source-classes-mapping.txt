@@ -1,2 +1,0 @@
-HelloOtus.java
- HelloOtus
