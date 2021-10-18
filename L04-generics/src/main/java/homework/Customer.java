@@ -1,6 +1,6 @@
 package homework;
 
-public class Customer implements Comparable<Customer>{
+public class Customer implements Comparable<Customer> {
     private final long id;
     private String name;
     private long scores;
@@ -48,15 +48,11 @@ public class Customer implements Comparable<Customer>{
         Customer customer = (Customer) o;
 
         return id == customer.id;
-//        if (scores != customer.scores) return false;
-//        return name != null ? name.equals(customer.name) : customer.name == null;
     }
 
     @Override
     public int hashCode() {
         int result = (int) (id ^ (id >>> 32));
-//        result = 31 * result + (name != null ? name.hashCode() : 0);
-//        result = 31 * result + (int) (scores ^ (scores >>> 32));
         return result;
     }
 
@@ -64,6 +60,7 @@ public class Customer implements Comparable<Customer>{
     public int compareTo(Customer o) {
         return Long.compare(this.scores, o.scores);
     }
+
     @Override
     public Customer clone() {
         try {
