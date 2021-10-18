@@ -1,3 +1,4 @@
 rootProject.name = 'javaOt'
 include 'hw-01'
+include 'L04-generics'
 
