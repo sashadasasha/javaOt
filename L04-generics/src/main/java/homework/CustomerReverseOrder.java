@@ -1,10 +1,10 @@
 package homework;
 
-import java.util.Stack;
+import java.util.*;
 
 public class CustomerReverseOrder {
 
-    private final Stack<Customer> stack = new Stack<>();
+    private final Deque<Customer> stack = new LinkedList<>();
 
     public void add(Customer customer) {
         stack.push(customer);
